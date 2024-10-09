@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidateByDirectInput</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+        <h1>Validate by Direct Input</h1>
+        <fieldset>
+            <legend>Validate by direct input</legend>
+            <label for="desc">Enter the Markup to validate:</label><br>
+            <textarea name="descripcion" id="desc" rows="10" cols="50"></textarea><br>
+
+            <input type="radio" name="validate" value="doc" id="doctype" checked>
+            <label for="doctype">Validate Full Document</label><br>
+
+            <label for="doct">Use Doctype:</label>
+            <select name="doctypes" id="doct">
+                <option value="">(detect automatically)</option>
+                <option value="b">Billie Eilish</option>
+                <option value="w">Wanda Maximoff</option>
+                <option value="c">Charlie Spring</option>
+            </select><br>
+            
+            <input type="radio" name="validate" value="html" id="htmlFragment">
+            <label for="htmlFragment">Validate HTML fragment</label><br>
+            
+            <label>Use Doctype:</label>
+            <input type="radio" name="hmtl" value="4.01" id="html4" checked>
+            <label for="html4">HTML 4.01</label>
+            <input type="radio" name="hmtl" value="1.0" id="xhtml">
+            <label for="xhtml">XHTML 1.0</label><br>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Options</legend>
+            <input type="radio" name="options" value="list" id="LMS" checked>
+            <label for="LMS">List Messages Sequentially</label>
+            <input type="radio" name="options" value="group" id="GEMBT">
+            <label for="GEMBT">Group Error Messages by Type</label><br>
+
+            <input type="checkbox" name="options2" value="source" id="SS" checked>
+            <label for="SS">Show Source</label>
+            <input type="checkbox" name="options2" value="markup" id="CUMH">
+            <label for="CUMH">Clean up Markup with HTML-Tidy</label><br>
+        </fieldset>
+
+        <input type="submit" name="CHECKEAR" value="Check">
+    </form>
+</body>
+</html>
