@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ValidateByDirectInput</title>
 </head>
+
 <body>
     <form method="post" action="index.js" enctype="multipart/form-data">
         <h1>Validate by Direct Input</h1>
@@ -23,16 +25,16 @@
                 <option value="w">Wanda Maximoff</option>
                 <option value="c">Charlie Spring</option>
             </select><br>
-            
+
             <input type="radio" name="validate" value="html" id="htmlFragment">
             <label for="htmlFragment">Validate HTML fragment</label><br>
-            
+
             <label>Use Doctype:</label>
             <input type="radio" name="hmtl" value="4.01" id="html4" checked>
             <label for="html4">HTML 4.01</label>
             <input type="radio" name="hmtl" value="1.0" id="xhtml">
             <label for="xhtml">XHTML 1.0</label><br>
-            
+
         </fieldset>
         <fieldset>
             <legend>Options</legend>
@@ -45,9 +47,19 @@
             <label for="SS">Show Source</label>
             <input type="checkbox" name="options2" value="markup" id="CUMH">
             <label for="CUMH">Clean up Markup with HTML-Tidy</label><br>
+
+            <label for="Sing">Favourite Singers:</label>
+            <select name="singers" id="Sing">
+                <option value="">(...:V...)</option>
+                <option value="b">Billie Eilish</option>
+                <option value="w">Justin Bieber</option>
+                <option value="c">Ariana Grande</option>
+            </select><br>
+
         </fieldset>
 
         <input type="submit" name="CHECKEAR" value="Check">
     </form>
 </body>
+
 </html>
